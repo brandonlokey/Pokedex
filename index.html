@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <center><img id="poke_logo" src=https://camo.githubusercontent.com/1a4b11888ddf9f2b7a9353d6b69503e634e8704c/68747470733a2f2f692e696d6775722e636f6d2f415975745a4f462e706e67 
+            height="150" width="500"></center>
+    </head>
+    <body style="background-color:red">
+        <center>
+            <form onsubmit="getPoke(event)">
+                <a><u>Pokemon Search:</u></a>
+                <input type='text' id='searchBar'>
+                <input type='submit' id='link' value='Search'>
+            </form>
+            <script src = "pokedex.js"></script>
+                <img id="img_url" src=. height="150" width="150" border="5px" style="background-color: blue;">
+                <table border="5px" width = "200" style = "background-color: white;">
+                    <tbody>
+                        <tr><td>Name:</td><td id="name">.</td></tr>
+                        <tr><td>Height:</td><td id="height">.</td></tr>
+                        <tr><td>Weight:</td><td id="weight">.</td></tr>
+                        <tr><td>Types:</td><td id="types">.</td></tr>
+                    </tbody>
+                </table>
+                <center>
+                <table border="5px" width="200" style="background-color: white;">
+                    <tbody>
+                        <tr><td><center>Starting Stats</center></td><td><center>Values</center></td></tr>
+                        <tr><td>HP:</td><td id="hp">.</td></tr>
+                        <tr><td>ATK:</td><td id="atk">.</td></tr>
+                        <tr><td>DEF:</td><td id="def">.</td></tr>
+                        <tr><td>SPEED:</td><td id="speed">.</td></tr>
+                        <tr><td>SPECIAL ATK:</td><td id="spec_atk">.</td></tr>
+                        <tr><td>SPECIAL DEF:</td><td id="spec_def">.</td></tr>
+                    </tbody>
+                </table>
+                <table border="5px" width="400" style="background-color: white; width:50%; float:left">
+                    <thead>
+                        <tr><td><center>Attack List</center></td></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td id="attacks"></td></tr>
+                    </tbody>
+                </table>
+                <table border="5px" width="200" style ="background-color: white; width:50%; float:left">
+                    <tr><td><center>Attack Info</center></td><td><center>Values</center></td></tr>
+                    <tr><td>Attack Name:</td><td id="atkname"></td></tr>
+                    <tr><td>Flavor Text:</td><td id="flavor"></td></tr>
+                    <tr><td>Accuracy:</td><td id="accuracy"></td></tr>
+                    <tr><td>PP:</td><td id="pp"></td></tr>
+                    <tr><td>Power:</td><td id="power"></td></tr>
+                    <tr><td>Type:</td><td id="atktype"></td></tr>
+                </table>
+        </center>
+    </body>
+</html>
