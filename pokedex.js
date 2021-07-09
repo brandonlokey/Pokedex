@@ -26,6 +26,7 @@ fetch(link)
 
     for (let i = 0; i < myJson.moves.length; i++) {
       let atkButton = document.createElement("BUTTON");
+      atkButton.setAttribute("class", "btn btn-info btn-sm")
       atkButton.innerHTML= myJson.moves[i].move.name.toString();
       let moveURL = myJson.moves[i].move.url.toString();
       atkButton.addEventListener("click", () => getAtkInfo(moveURL));
@@ -61,8 +62,10 @@ function getPoke(event) {
     document.getElementById("atk").innerHTML = myJson.stats[4].base_stat;
     document.getElementById("hp").innerHTML = myJson.stats[5].base_stat;
 
+    document.getElementById("attacks").innerHTML = '';
     for (let i = 0; i < myJson.moves.length; i++) {
       let atkButton = document.createElement("BUTTON");
+      atkButton.setAttribute("class", "btn btn-info btn-sm")
       atkButton.innerHTML= myJson.moves[i].move.name.toString();
       let moveURL = myJson.moves[i].move.url.toString();
       atkButton.addEventListener("click", () => getAtkInfo(moveURL));
